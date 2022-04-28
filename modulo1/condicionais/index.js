@@ -1,3 +1,27 @@
+/* ------ EXERCICIOS DE INTERPRETAÇÃO -------
+
+--- Exercicio 1 ---
+
+A) Vai testa se o numero dado pelo usuario é divisivel por 2
+B) Para números PARES pois resto é 0
+C) Para numeros impares pois resto é 1
+
+--- Exercicio 2 ---
+
+A) Para passar o valor da fruta escolhida
+B) O preço da fruta Maçã é R$ 2.25
+C) O valor da Pêra seria 5.00, vai passar reto pois não foi dado final para a condição.
+
+--- Exercicio 3 ---
+
+A) Variavel que pedi um numero para usuario
+B) Se for maior que 10 vai imprimir a mensagem "esse numero passou no teste", se for -10 não vai imprimir nada
+não foi atribuído um else para ele só feito uma outra variável
+C) Somente se for dado numero negativo
+
+
+
+
 /* ------ EXERCICIO DE ESCRITA ------
 
 --- Exercicio 1-
@@ -73,7 +97,7 @@ cinema()
 //--- Desafio 2 ---
 
 //SOLICITAÇÃO
-let nome=prompt("Qual é o seu nome completo?").toLowerCase()
+let nome=prompt("Qual é o seu nome completo?")
 
 let tipoJogo=prompt(`Qual o tipo de jogo?
 IN - Internacional
@@ -258,7 +282,7 @@ else if (tipoJogo==="in" && etapaJogo==="sf" && categoria===1){
     Categoria: 1
     Quantidade de ingresso: ${quantidadeIngresso}
     ---valores---
-    Valor do ingreso: U$ ${ingressoSf1}
+    Valor do ingreso: U$ ${ingressoSf1/4.10}
     Valor total: U$ ${(ingressoSf1*quantidadeIngresso)/4.10}`)
 }
 
@@ -269,7 +293,7 @@ else if (tipoJogo==="in" && etapaJogo==="sf" && categoria===1){
             Categoria: 2
             Quantidade de ingresso: ${quantidadeIngresso}
             ---valores---
-            Valor do ingreso: U$ ${ingressoSf2}
+            Valor do ingreso: U$ ${ingressoSf2/4.10}
             Valor total: U$ ${(ingressoSf2*quantidadeIngresso)/4.10}`)
         }
 
@@ -280,7 +304,7 @@ else if (tipoJogo==="in" && etapaJogo==="sf" && categoria===1){
                     Categoria: 3
                     Quantidade de ingresso: ${quantidadeIngresso}
                     ---valores---
-                    Valor do ingreso: U$ ${ingressoSf3}
+                    Valor do ingreso: U$ ${ingressoSf3/4.10}
                     Valor total: U$ ${(ingressoSf3*quantidadeIngresso)/4.10}`)
                 }
 
@@ -291,7 +315,7 @@ else if (tipoJogo==="in" && etapaJogo==="sf" && categoria===1){
                             Categoria: 4
                             Quantidade de ingresso: ${quantidadeIngresso}
                             ---valores---
-                            Valor do ingreso: U$ ${ingressoSf4}
+                            Valor do ingreso: U$ ${ingressoSf4/4.10}
                             Valor total: U$ ${(ingressoSf4*quantidadeIngresso)/4.10}`)
                         }
 
@@ -304,7 +328,7 @@ Etapa do jogo: Decisão do 3° Lugar
 Categoria: 1
 Quantidade de ingresso: ${quantidadeIngresso}
 ---valores---
-Valor do ingreso: U$ ${ingressoDt1}
+Valor do ingreso: U$ ${ingressoDt1/4.10}
 Valor total: U$ ${(ingressoDt1*quantidadeIngresso)/4.10}`)
 }
 
@@ -315,7 +339,7 @@ Etapa do jogo: Decisão do 3° Lugar
 Categoria: 2
 Quantidade de ingresso: ${quantidadeIngresso}
 ---valores---
-Valor do ingreso: U$ ${ingressoDt2}
+Valor do ingreso: U$ ${ingressoDt2/4.10}
 Valor total: U$ ${(ingressoDt2*quantidadeIngresso)/4.10}`)
 }
 
@@ -326,7 +350,7 @@ Etapa do jogo: Decisão do 3° Lugar
 Categoria: 3
 Quantidade de ingresso: ${quantidadeIngresso}
 ---valores---
-Valor do ingreso: U$ ${ingressoDt3}                                                    
+Valor do ingreso: U$ ${ingressoDt3/4.10}                                                    
 Valor total: U$ ${(ingressoDt3*quantidadeIngresso)/4.10}`)                                                   
 }                                               
 
@@ -338,7 +362,7 @@ Etapa do jogo: Decisão do 3° Lugar
 Categoria: 4                                                 
 Quantidade de ingresso: ${quantidadeIngresso}                                                    
 ---valores---                                                    
-Valor do ingreso: U$ ${ingressoDt4}                                                    
+Valor do ingreso: U$ ${ingressoDt4/4.10}                                                    
 Valor total: U$ ${(ingressoDt4*quantidadeIngresso)/4.10}`)                                                    
 }   
 
@@ -351,7 +375,7 @@ Etapa do jogo:  Final
 Categoria: 1                                                 
 Quantidade de ingresso: ${quantidadeIngresso}                                                    
 ---valores---                                                    
-Valor do ingreso: U$ ${ingressoFI1}                                                    
+Valor do ingreso: U$ ${ingressoFI1/4.10}                                                    
 Valor total: U$ ${(ingressoFI1*quantidadeIngresso)/4.10}`)                                                    
 }  
 
@@ -362,7 +386,7 @@ Etapa do jogo:  Final
 Categoria: 2                                                
 Quantidade de ingresso: ${quantidadeIngresso}                                                    
 ---valores---                                                    
-Valor do ingreso: U$ ${ingressoFI2}                                                    
+Valor do ingreso: U$ ${ingressoFI2/4.10}                                                    
 Valor total: U$ ${(ingressoFI2*quantidadeIngresso)/4.10}`)                                                    
 } 
 
@@ -373,7 +397,7 @@ Etapa do jogo:  Final
 Categoria: 3                                                 
 Quantidade de ingresso: ${quantidadeIngresso}                                                    
 ---valores---                                                    
-Valor do ingreso: U$ ${ingressoFI3}                                                    
+Valor do ingreso: U$ ${ingressoFI3/4.10}                                                    
 Valor total: U$ ${(ingressoFI3*quantidadeIngresso)/4.10}`)                                                    
 } 
 
@@ -384,7 +408,7 @@ Etapa do jogo:  Final
 Categoria: 4                                                 
 Quantidade de ingresso: ${quantidadeIngresso}                                                    
 ---valores---                                                    
-Valor do ingreso: U$ ${ingressoFI4}                                                    
+Valor do ingreso: U$ ${ingressoFI4/4.10}                                                    
 Valor total: U$ ${(ingressoFI4*quantidadeIngresso)/4.10}`)                                                    
 } 
 
