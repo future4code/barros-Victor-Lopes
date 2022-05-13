@@ -212,10 +212,16 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
     
-    for (let i=0; i<contas.length; i++){
-       let soma = contas[i].compras[i]++
-        return soma
+    let saldo = contas.map ((item)=>{
+        return item.compras.reduce((valor1, valor2)=>{
+           return  valor1+valor2
+        },0)
+    })
+    for ( let i=0; i<contas.length; i++){
+        contas[i].saldoTotal -= saldo[i]
+        contas[i].compras = [] 
     }
+    return contas
 
 }
 
