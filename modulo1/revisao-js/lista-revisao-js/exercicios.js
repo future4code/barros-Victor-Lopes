@@ -99,7 +99,9 @@ return obj
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
+    
     let arraypares=[] 
+   
     for (let i=0; i<n*2; i++){
        if(i%2===0){  
          arraypares.push(i)
@@ -232,9 +234,11 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
     
-    function ordemCrescente(a, b) {
-        return b.dataDaConsulta - a.dataDaConsulta;
-      }
-
-    return  consultas.sort(ordemCrescente)
+    let ordenar = consultas.sort((a, b) => {
+	
+        return (a.dataDaConsulta > b.dataDaConsulta) ? 1 : ((b.dataDaConsulta > a.dataDaConsulta) ? -1 : 0);
+     
+    });
+     
+    return ordenar
 }
