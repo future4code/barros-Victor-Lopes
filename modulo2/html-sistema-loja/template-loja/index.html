@@ -5,34 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nossa Sala</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cinzel&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Bem-vindos ao <em>Nossa Sala</em>!</h1>
-        <p>Aqui você vera tudo oque você não tem e tudo oque voce precisa para a sua sala de estar</p>
+    <section class="titulo-pagina">
+        <div class="texto">
+            <h1>Bem-vindos ao <em>Nossa Sala</em>!</h1>
+            <p>Aqui você vera tudo oque você não tem e tudo oque voce precisa para a sua sala de estar</p>
+        </div>
+    </section> 
     </header>
 
     <nav>
-        <a href="index.html">Página Inicial |</a><br>
-        <a href="ctrl-estoque.html">Controle de Estoque |</a><br>
-        <a href="add-produto.html">Adicionar Produto |</a><br>
-        <a href="funcionarios.html">Funcionários</a>
+        <div class="links">
+        <a href="index.html" title="Pagina inicial">Página Inicial |</a>
+        <a href="ctrl-estoque.html" title="Controle de estoque">Controle de Estoque |</a>
+        <a href="add-produto.html" title="Adicionar produto">Adicionar Produto |</a>
+        <a href="funcionarios.html" title="Funcionarios">Funcionários</a>
+       </div>
     </nav>
 
     <main>
-       
-        <h4>Aqui você pode conferir os produtos com as melhores qualidades</h4>
+       <section class="conteudo">
         
-        <table border="1px">
+        <div class="tabela1">
+       
+        <h4>Aqui você pode conferir os produtos com as melhores qualidades</h4> 
+        <table>
             <tr>
-                <td> <a href="ctrl-estoque.html"><img src="img/Tv.jfif" alt="" width="200px" height="150px"></a> </td>
-                <td> <a href="ctrl-estoque.html"><img src="img/sofa.jfif" alt="" width="200px" height="150px"></a> </td>
-                <td> <a href="ctrl-estoque.html"><img src="img/Painel.jfif" alt="" width="200px" height="100px"></a> </td>
+                <td> <a href="ctrl-estoque.html" title="Televisão"><img src="img/Tv.jfif" alt="" width="200px" height="150px"></a> </td>
+                <td> <a href="ctrl-estoque.html" title="Sofá"><img src="img/sofa.jfif" alt="" width="200px" height="150px"></a> </td>
+                <td> <a href="ctrl-estoque.html" title="Painel"><img src="img/Painel.jfif" alt="" width="200px" height="150px"></a> </td>
             </tr>
         </table>
- 
+        </div>
+      
+        <div class="tabela2">
         <h3>Confira o feedback dos clientes</h3>
-        <table border="1px">
+        <table>
             <tr>
                 <th>Nome</th>
                 <th>Produto</th>
@@ -41,35 +53,40 @@
             
             <tr>
                 <td>Rosana</td>
-                <td><a href="ctrl-estoque.html">TV</a></td>
+                <td><a href="ctrl-estoque.html" title="TV">TV</a></td>
                 <td>Excelente produto com uma qualidade imensa</td>
             </tr>
 
             <tr>
                 <td>Mauro</td>
-                <td><a href="ctrl-estoque.html">sofá</a></td>
+                <td><a href="ctrl-estoque.html" title="SOFÁ">sofá</a></td>
                 <td>Me sinto nas nuvens ao sentar no meu novo sofá</td>
             </tr>
 
             <tr>
                 <td>Jessica</td>
-                <td><a href="ctrl-estoque.html">Tapete</a></td>
+                <td><a href="ctrl-estoque.html" title="TAPETE">Tapete</a></td>
                 <td>Minha sala parece um palacio com esse tapete maravilhoso</td>
             </tr>
        </table>
+    </div>
 
+    <div class="feedback">
        <h3>Você pode conferir mais Feddback atraves do link abaixo</h3>
 
-       <a href="https://br.trustpilot.com/review/www.casasbahia.com.br">Confira os feedback aqui!!!</a>
-
+       <a href="https://br.trustpilot.com/review/www.casasbahia.com.br" title="feedback">Confira os feedback aqui</a>
+    </div>
+      </section>
     </main>
 
     
     <footer>
+        <div class="rodape">
         <p>Siga-nos nas redes sociais!</p>
         <img src="https://image.flaticon.com/icons/png/512/25/25305.png"/>
         <img src="https://image.flaticon.com/icons/png/512/25/25425.png"/>
         <img src="https://image.flaticon.com/icons/png/512/8/8800.png"/>
-    </footer>
+        </div>
+ </footer>
 </body>
 </html>
