@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: mediumvioletred;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo h1{
+    padding-left: 25px;
+}
+
+.conteudo{
+    display: flex;
+    
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2d0e0;
+    width: 250px;
+    padding: 15px;
+    height: 100%;
+    
+}
+
+.links-c{
+    display: flex;
+    align-items: center;
+    
+}
+
+.links-c p{
+    padding: 0 25px;
+}
+
+.l-s{
+    display:flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagens-bolo{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.bolo-e-texto{
+    margin: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px  darkgray;
+    padding: 10px;
+}
+
+.rodape{
+    background-color: mediumvioletred;
+    text-align: center;
+    padding: 10px;
+    
+    position: absolute;
+    width: 99%;
+    
+}
